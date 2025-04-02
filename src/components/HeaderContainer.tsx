@@ -10,8 +10,7 @@ function HeaderContainer() {
                 <h2 className="header__desc">Software Developer</h2>
             </div>
             <div className="header__image">
-                {/* TODO: put image of myself here */}
-                <div className="temporary"></div>
+                <img src="/icon.jpg" alt="me" className="icon__container" />
             </div>
         </>
     );

@@ -10,7 +10,7 @@
 }
 
 .header__name {
-    color: blue;
+    color: #84A4F5;
 }
 
 .header__desc {
@@ -21,10 +21,10 @@
     width: 200px;
     height: 200px;
     aspect-ratio: 1;
-    background-color: lightgray;
 }
 
-.temporary {
+.icon__container {
     width: 100%;
     height: 100%;
+    border-radius: 15%;
 }

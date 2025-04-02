@@ -1,4 +1,4 @@
-.introduction__container {
+.projects__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,12 +6,12 @@
     gap: 50%;
 }
 
-.introduction__title {
-    color: #84A4F5;
+.projects__title {
     font-size: 2em;
+    color: #84A4F5;
 }
 
-.introduction__text {
-    text-align: left;
+.projects__text {
+    text-align: center;
     padding-right: 20px;
 }
