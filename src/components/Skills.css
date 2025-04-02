@@ -1,4 +1,4 @@
-.introduction__container {
+.skills__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,11 +6,11 @@
     gap: 50%;
 }
 
-.introduction__title {
+.skills__title {
     font-size: 2em;
 }
 
-.introduction__text {
-    text-align: left;
+.skill__text {
+    text-align: center;
     padding-right: 20px;
 }

@@ -1,13 +1,16 @@
+import BaseContainer from './components/container/BaseContainer.js';
 import HeaderContainer from './components/HeaderContainer.jsx';
 import Introduction from './components/Introduction.js';
+import Skills from './components/Skills.js';
 
 function App() {
     // add motion scroll here
     return (
         <div className="page">
             {/* Overarching stagger buttons - see motion */}
-            <HeaderContainer />
-            <Introduction />
+            <BaseContainer containerContent={<HeaderContainer/>} />
+            <BaseContainer containerContent={<Introduction/>} />
+            <BaseContainer containerContent={<Skills/>} />
             {/* Skills - layout animations? */}
             {/* Projects - layout animations? */}
             {/* Footer */}

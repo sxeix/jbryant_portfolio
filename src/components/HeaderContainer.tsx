@@ -2,7 +2,7 @@ import "./HeaderContainer.css";
 
 function HeaderContainer() {
     return (
-        <div className="header__container">
+        <>
             <div className="header__text">
                 <h1 className="header__intro">
                     Hi, I&apos;m <span className="header__name"> James Bryant</span>
@@ -13,7 +13,7 @@ function HeaderContainer() {
                 {/* TODO: put image of myself here */}
                 <div className="temporary"></div>
             </div>
-        </div>
+        </>
     );
 }
 

@@ -3,9 +3,9 @@ import "./Introduction.css";
 function Introduction() {
     return (
         <div className="introduction__container">
-            <div className="introduction__title">
+            <h1 className="introduction__title">
                 About me
-            </div>
+            </h1>
             <div className="introduction__text">
                 <p>
                     Oxfordshire based Software Developer with 3+ years experience building web applications. Currently working as a full-stack developer (Java/JS/SQL) at Webexpenses with a focus in Java.
