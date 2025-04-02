@@ -19,7 +19,7 @@ ul {
 }
 
 li {
-    min-width: 15vw;
+    min-width: 10vw;
     display: flex;
     flex-direction: column;
     text-align: center;
