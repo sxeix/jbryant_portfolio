@@ -8,7 +8,7 @@ const javaSection: SectionProps = {
     alignment: "left"
 }
 
-function Projects() {
+function ProProjects() {
     return (
         <div className="projects__container">
             <h1 className="projects__title">
@@ -21,4 +21,4 @@ function Projects() {
     );
 }
 
-export default Projects;
+export default ProProjects;
