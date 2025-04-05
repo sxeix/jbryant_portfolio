@@ -1,6 +1,7 @@
 import "./Section.css";
 import SectionProps from "./SectionInterface";
 import GithubMark from "../icons/GithubMark";
+import { motion } from "motion/react";
 
 function Section(props: SectionProps) {
 
@@ -10,9 +11,17 @@ function Section(props: SectionProps) {
                 {props.title}
                 {
                     props.githubLink ?
-                        <a href={props.githubLink} className="github">
-                            <GithubMark sizeInPixels="20px" fillColor="#84A4F5"/>
-                        </a>
+                    <motion.a
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.90 }}
+                    href={props.githubLink}
+                    className="github"
+                >
+                    <GithubMark sizeInPixels="20px" fillColor="#84A4F5"/>
+                </motion.a>
+                        // <a href={props.githubLink} className="github">
+                        //     <GithubMark sizeInPixels="20px" fillColor="#84A4F5"/>
+                        // </a>
                         :
                         null
                 }

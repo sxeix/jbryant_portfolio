@@ -1,7 +1,7 @@
 import "./FooterContainer.css";
-import GithubMark from "./icons/GithubMark.tsx";
+import GithubMark from "./icons/GithubMark";
 import { motion } from "motion/react"
-import LinkedinIcon from "./icons/LinkedinIcon.tsx";
+import LinkedinIcon from "./icons/LinkedinIcon";
 
 interface FooterProps {
     ref: React.RefObject<HTMLDivElement | null>;
