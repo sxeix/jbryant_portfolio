@@ -1,20 +1,22 @@
 import "./Section.css";
 import SectionProps from "./SectionInterface";
+import GithubMark from "../icons/GithubMark";
 
 function Section(props: SectionProps) {
-
-    const githubIcon = function () {
-        
-        if (props.githubLink) {
-            return <div>hello</div>
-        }
-    }
 
     return (
         <div className="section__container left">
             <h2 className="section__title">
                 {props.title}
-                {githubIcon()}
+                {
+                    props.githubLink ?
+                        <a href={props.githubLink} className="github">
+                            <GithubMark sizeInPixels="20px" />
+                        </a>
+                        :
+                        null
+                }
+
             </h2>
             <p className="section__content">
                 {props.content}
