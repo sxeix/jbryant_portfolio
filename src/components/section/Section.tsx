@@ -11,7 +11,7 @@ function Section(props: SectionProps) {
                 {
                     props.githubLink ?
                         <a href={props.githubLink} className="github">
-                            <GithubMark sizeInPixels="20px" />
+                            <GithubMark sizeInPixels="20px" fillColor="#84A4F5"/>
                         </a>
                         :
                         null

@@ -8,3 +8,8 @@ body {
       "wdth" 100;
       color: #596175;
 }
+
+body, html {
+    margin: 0;
+    padding: 0;
+}

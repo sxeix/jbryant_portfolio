@@ -7,6 +7,7 @@ import NavProps from './components/nav/NavInterfaces.js';
 import Skills from './components/Skills.js';
 import ProProjects from './components/ProProjects.js';
 import PersonalProjects from './components/PersonalProjects.js';
+import Footer from './components/footer.js';
 
 function App() {
 
@@ -41,17 +42,15 @@ function App() {
         ]
     };
 
-    // add motion scroll here
     return (
         <div className="page">
             <Nav sections={navSections.sections} />
-            {/* Overarching stagger buttons - see motion js stagger */}
             <BaseContainer containerContent={<HeaderContainer/>} sectionName='header' ref={headerRef}/>
             <BaseContainer containerContent={<Introduction/>} sectionName='introduction' ref={introductionRef}/>
             <BaseContainer containerContent={<Skills/>} sectionName='skills' ref={skillsRef}/>
             <BaseContainer containerContent={<ProProjects/>} sectionName='proProjects' ref={proProjectsRef}/>
             <BaseContainer containerContent={<PersonalProjects/>} sectionName='personalProjects' ref={personalProjectsRef}/>
-            {/* Footer */}
+            <Footer/>
         </div>
     );
 }

@@ -1,0 +1,31 @@
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    background-color: #84A4F5;
+}
+
+.footer__contact {
+    margin-bottom: 20px;
+}
+
+.footer__contact__button {
+    cursor: pointer;
+    border-width: 2px;
+    border-radius: 0.5em;
+    color: #84A4F5;
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

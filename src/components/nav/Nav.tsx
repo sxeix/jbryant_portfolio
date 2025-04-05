@@ -35,16 +35,19 @@ function Nav(props: NavProps) {
                     animate="visible"
                     variants={listVariants}
                     style={{ listStyleType: 'none', padding: 0 }}
+                    className="nav__list__container"
                 >
                     {props.sections.map((section, index) => (
                         <motion.li
                             key={index}
                             variants={itemVariants}
+                            className="nav__list"
                         >
                             <motion.a
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={() => executeScroll(section.ref)}
+                                className="nav__clickable"
                             >
                                 {section.text}
                             </motion.a>
@@ -55,6 +58,5 @@ function Nav(props: NavProps) {
         </div>
     );
 }
-
 
 export default Nav;
