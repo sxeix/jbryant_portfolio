@@ -11,17 +11,14 @@ function Section(props: SectionProps) {
                 {props.title}
                 {
                     props.githubLink ?
-                    <motion.a
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.90 }}
-                    href={props.githubLink}
-                    className="github"
-                >
-                    <GithubMark sizeInPixels="20px" fillColor="#84A4F5"/>
-                </motion.a>
-                        // <a href={props.githubLink} className="github">
-                        //     <GithubMark sizeInPixels="20px" fillColor="#84A4F5"/>
-                        // </a>
+                        <motion.a
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.90 }}
+                            href={props.githubLink}
+                            className="github"
+                        >
+                            <GithubMark sizeInPixels="20px" fillColor="#84A4F5" />
+                        </motion.a>
                         :
                         null
                 }
