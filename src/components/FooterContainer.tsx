@@ -1,7 +1,7 @@
 import "./FooterContainer.css";
 import GithubMark from "./icons/GithubMark.tsx";
 import { motion } from "motion/react"
-import Linkedin from "./icons/Linkedin.tsx";
+import LinkedinIcon from "./icons/LinkedinIcon.tsx";
 
 interface FooterProps {
     ref: React.RefObject<HTMLDivElement | null>;
@@ -29,7 +29,7 @@ function FooterContainer(props: FooterProps) {
                     href="https://www.linkedin.com/in/jamesjbryant/"
                     className="footer__socials__button"
                 >
-                    <Linkedin sizeInPixels="50px" />
+                    <LinkedinIcon sizeInPixels="50px" />
                 </motion.a>
                 <motion.a
                     whileHover={{ scale: 1.05 }}
