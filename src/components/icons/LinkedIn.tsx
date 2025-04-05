@@ -1,6 +1,6 @@
 import IconInterface from "./IconInterface";
 
-function LinkedIn(props: IconInterface) {
+function Linkedin(props: IconInterface) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,4 +23,4 @@ function LinkedIn(props: IconInterface) {
     );
 }
 
-export default LinkedIn;
+export default Linkedin;
