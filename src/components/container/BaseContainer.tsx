@@ -3,7 +3,7 @@ import "./BaseContainer.css";
 interface ContainerContentProps {
     containerContent: React.ReactNode,
     sectionName: string,
-    ref: React.RefObject<HTMLDivElement | null>; // Corrected type here
+    ref: React.RefObject<HTMLDivElement | null>;
 }
 
 function BaseContainer(props: ContainerContentProps) {
