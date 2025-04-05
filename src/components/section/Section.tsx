@@ -1,15 +1,20 @@
 import "./Section.css";
 import SectionProps from "./SectionInterface";
 
-
 function Section(props: SectionProps) {
 
-    const alignmentStyle: string = props.alignment === 'left' ? "section__container left" :"section__container right";
+    const githubIcon = function () {
+        
+        if (props.githubLink) {
+            return <div>hello</div>
+        }
+    }
 
     return (
-        <div className={alignmentStyle}>
+        <div className="section__container left">
             <h2 className="section__title">
                 {props.title}
+                {githubIcon()}
             </h2>
             <p className="section__content">
                 {props.content}

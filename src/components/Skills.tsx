@@ -4,26 +4,29 @@ import "./Skills.css";
 
 const javaSection: SectionProps = {
     title: "Java",
-    content: "Nostrud dolor enim tempor in minim. Reprehenderit laborum exercitation qui est laborum tempor magna tempor cupidatat excepteur officia sunt. Ut ut mollit proident magna proident aute non irure ea elit consectetur nulla. Qui officia deserunt labore dolor sint dolor commodo qui ullamco id. Ipsum sunt labore tempor culpa. Veniam eiusmod aliqua officia aliqua ipsum aliquip culpa nostrud ut sint. Do incididunt nostrud ullamco id ut dolor elit ut.",
-    alignment: "left"
+    content: `By far my strongest language and the one I am most comfortable working in. I have used Java extensively throughout university and throughout my entire career as a software developer. 
+    Primarily my experience with Java is based around building microservices with Spring Boot paired with Hibernate, JUnit, Mockito etc. 
+    Additionally, working closely with AWS features and resources to host and orchestrate the entire suite of microservices. 
+    Working on code ranging from Java 8 through to 21, I've been able to get hands on with older legacy code as well as modern standards which has greatly aided my ability to deal with different styles and standards of Java. `
 }
 
-const javaScriptSection: SectionProps = {
-    title: "Javascript",
-    content: "Irure dolor ullamco nulla aliquip duis mollit duis magna mollit Lorem duis. Irure culpa incididunt duis do dolore sunt. Veniam magna consequat ullamco aliquip non consectetur ut reprehenderit. Commodo velit ex do duis laborum cupidatat cillum aliquip ullamco sunt commodo. Duis aute consectetur elit cillum incididunt sit. Elit minim exercitation ex laborum veniam minim in enim irure nisi. Qui enim Lorem sit ad culpa deserunt aute aliqua anim nulla enim exercitation et.",
-    alignment: "left"
+const awsSection: SectionProps = {
+    title: "AWS",
+    content: `In recent time I have become increasingly familiar and hands on with building applications that can leverage the AWS capabilities. Namely SQS, Secrets Manager, Parameter Store, SNS, Lambda, S3, SES, Cloudformation and EventBridge. 
+    Further working closely with Infastructure developers to ensure deployment goes well and diagnose any issues in production.`
 }
 
 const sqlAndPostgresqlSection: SectionProps = {
     title: "SQL/Postgresql",
-    content: "Nostrud magna aliqua enim consequat est aliquip nulla labore ea. Nisi magna esse cillum irure ad minim. Ad in sit pariatur consectetur deserunt. Quis cillum id amet ex tempor sint incididunt. Laborum aute culpa officia adipisicing nisi reprehenderit aute id proident proident mollit ea. Commodo pariatur ut deserunt voluptate in ullamco ipsum sunt in culpa tempor nostrud irure. Sit eu velit voluptate labore nisi sunt.",
-    alignment: "left"
+    content: `I have equal experience using both Microsoft SQL Server and PostgreSQL AWS Aurora. Ensuring that the written queries are performant and targetted. Familiar with stored procedures, indexes, roles and locking etc.
+    Using Flyway for migration of databases, I have conciously ensured that new scripts are re-runnable and do not lose data.`
 }
 
-const reactSection: SectionProps = {
-    title: "React",
-    content: "Nostrud magna aliqua enim consequat est aliquip nulla labore ea. Nisi magna esse cillum irure ad minim. Ad in sit pariatur consectetur deserunt. Quis cillum id amet ex tempor sint incididunt. Laborum aute culpa officia adipisicing nisi reprehenderit aute id proident proident mollit ea. Commodo pariatur ut deserunt voluptate in ullamco ipsum sunt in culpa tempor nostrud irure. Sit eu velit voluptate labore nisi sunt.",
-    alignment: "left"
+const javaScriptSection: SectionProps = {
+    title: "JS/TS/React/Angular",
+    content: `I am very capable at front end development and have regularly worked on a multitude of web application UIs throughout my career. 
+    Initially starting with TS Angular and moving to a JS environment which is now being migrated to TS React, I have to adapt constantly to work in all of these scenarios.
+    I have further been very hands-on utilising frameworks such as jQuery, Handlebars, KendoJs as well as Gherkin, Selenium, Protractor. Even going as far as establishing a Functional Verification Test suite to run in a pipeline`
 }
 
 function Skills() {
@@ -33,10 +36,10 @@ function Skills() {
                 Skills
             </h1>
             <div className="skills__text">
-                <Section title={javaSection.title} content={javaSection.content} alignment={javaSection.alignment}></Section>
-                <Section title={javaScriptSection.title} content={javaScriptSection.content} alignment={javaScriptSection.alignment}></Section>
-                <Section title={sqlAndPostgresqlSection.title} content={sqlAndPostgresqlSection.content} alignment={sqlAndPostgresqlSection.alignment}></Section>
-                <Section title={reactSection.title} content={reactSection.content} alignment={reactSection.alignment}></Section>
+                <Section title={javaSection.title} content={javaSection.content}></Section>
+                <Section title={awsSection.title} content={awsSection.content}></Section>
+                <Section title={sqlAndPostgresqlSection.title} content={sqlAndPostgresqlSection.content}></Section>
+                <Section title={javaScriptSection.title} content={javaScriptSection.content}></Section>
             </div>
         </div>
     );

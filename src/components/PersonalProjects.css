@@ -1,0 +1,17 @@
+.projects__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+}
+
+.projects__title {
+    font-size: 2em;
+    color: #84A4F5;
+}
+
+.projects__text {
+    text-align: center;
+    padding-right: 20px;
+}

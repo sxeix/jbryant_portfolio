@@ -1,9 +1,7 @@
-type Alignment = "left" | "right";
-
 interface SectionProps {
     title: string,
     content: string,
-    alignment: Alignment
+    githubLink?: string,
 }
 
 export default SectionProps;
