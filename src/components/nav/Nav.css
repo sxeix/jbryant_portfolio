@@ -6,6 +6,8 @@
     display: flex;
     justify-content: center;
     padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: white;
 }
 
 .nav__list__container {
