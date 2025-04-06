@@ -15,6 +15,7 @@ function Section(props: SectionProps) {
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.90 }}
                             href={props.githubLink}
+                            target="_blank"
                             className="github"
                         >
                             <GithubMark sizeInPixels="20px" fillColor="#84A4F5" />

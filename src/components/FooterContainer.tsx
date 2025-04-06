@@ -27,6 +27,7 @@ function FooterContainer(props: FooterProps) {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     href="https://www.linkedin.com/in/jamesjbryant/"
+                    target="_blank"
                     className="footer__socials__button"
                 >
                     <LinkedinIcon sizeInPixels="50px" />
@@ -35,6 +36,7 @@ function FooterContainer(props: FooterProps) {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     href="https://github.com/sxeix"
+                    target="_blank"
                     className="footer__socials__button"
                 >
                     <GithubMark sizeInPixels="50px" />
