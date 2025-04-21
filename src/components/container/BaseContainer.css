@@ -9,7 +9,8 @@
 
 @media (max-width: 992px) {
     .base__container {
-        /* background-color: orange; */
         font-size: small;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 }

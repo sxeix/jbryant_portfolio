@@ -1,7 +1,6 @@
 import { motion } from "motion/react"
 import "./Nav.css";
 import NavProps from "./NavInterfaces";
-import { BrowserView, MobileView } from "react-device-detect";
 import { useState } from "react";
 
 function Nav(props: NavProps) {
@@ -44,7 +43,7 @@ function Nav(props: NavProps) {
 
     return (
         <div className="nav">
-            <MobileView className="nav__mobile">
+            <div className="nav__mobile">
                 {openNavDisplay ?
                     <motion.div
                         className="nav__mobile_options"
@@ -91,35 +90,7 @@ function Nav(props: NavProps) {
                         </motion.a>
                     </div>
                 }
-            </MobileView>
-            <BrowserView className="nav__browser">
-                <div className="button_list">
-                    <motion.ul
-                        initial="hidden"
-                        animate="visible"
-                        variants={listVariants}
-                        style={{ listStyleType: 'none', padding: 0 }}
-                        className="nav__list__container"
-                    >
-                        {props.sections.map((section, index) => (
-                            <motion.li
-                                key={index}
-                                variants={itemVariants}
-                                className="nav__list"
-                            >
-                                <motion.a
-                                    whileHover={{ scale: 1.02 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    onClick={() => executeScroll(section.ref)}
-                                    className="nav__clickable"
-                                >
-                                    {section.text}
-                                </motion.a>
-                            </motion.li>
-                        ))}
-                    </motion.ul>
-                </div>
-            </BrowserView>
+            </div>
         </div>
     );
 }
