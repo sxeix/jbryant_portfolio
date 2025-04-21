@@ -8,6 +8,7 @@ import Skills from './components/Skills.tsx';
 import ProProjects from './components/ProProjects.tsx';
 import PersonalProjects from './components/PersonalProjects.tsx';
 import FooterContainer from './components/FooterContainer.tsx';
+import { motion, useScroll } from 'motion/react';
 
 function App() {
 
@@ -47,8 +48,22 @@ function App() {
         ]
     };
 
+    const { scrollYProgress } = useScroll();
+
     return (
         <div className="page">
+            <motion.div
+                style={{
+                    scaleX: scrollYProgress,
+                    position: "fixed",
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    height: 10,
+                    originX: 0,
+                    backgroundColor: "#84A4F5",
+                }}
+            />
             <Nav sections={navSections.sections} />
             <BaseContainer containerContent={<HeaderContainer />} sectionName='header' ref={headerRef} />
             <BaseContainer containerContent={<Introduction />} sectionName='introduction' ref={introductionRef} />
