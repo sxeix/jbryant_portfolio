@@ -13,6 +13,7 @@
     "jbryant_portfolio": "file:",
     "motion": "^12.6.3",
     "react": "^19.0.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
