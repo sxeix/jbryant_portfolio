@@ -8,7 +8,6 @@ function Section(props: SectionProps) {
     return (
         <div className="section__container left">
             <h2 className="section__title">
-                {props.title}
                 {
                     props.githubLink ?
                         <motion.a
@@ -23,7 +22,7 @@ function Section(props: SectionProps) {
                         :
                         null
                 }
-
+                {props.title}
             </h2>
             <p className="section__content">
                 {props.content}
