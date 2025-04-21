@@ -6,7 +6,13 @@ function Nav(props: NavProps) {
 
     const executeScroll = (ref: React.RefObject<HTMLElement | null>) => {
         if (ref.current) {
-            ref.current.scrollIntoView({ behavior: 'smooth' });
+            ref.current.scrollIntoView(
+                {
+                    behavior: 'smooth',
+                    block: 'start',
+                    inline: 'nearest'
+                }
+            );
         }
     };
 
