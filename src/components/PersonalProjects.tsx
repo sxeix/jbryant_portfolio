@@ -14,7 +14,7 @@ const smolUrl: SectionProps = {
 const thisPortfolio: SectionProps = {
     title: "This website",
     content: `Wanting a reason to exercise my React abilities, I picked it as my language of choice for this website you are reading, despite how it could have easily been developed without a framework/library. 
-    The animations are done using Motion and the choice of hosting is TBD.`,
+    The animations are done using Motion and the choice of hosting is Netlify.`,
     githubLink: "https://github.com/sxeix/jbryant_portfolio"
 }
 
