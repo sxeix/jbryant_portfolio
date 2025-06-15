@@ -7,7 +7,7 @@ function HeaderContainer() {
                 <h1 className="header__intro">
                     Hi, I&apos;m <span className="header__name"> James Bryant</span>
                 </h1>
-                <h2 className="header__desc">Software Developer</h2>
+                <h2 className="header__desc">Software Developer - Fintech</h2>
             </div>
             <div className="header__image">
                 <img src="/icon.png" alt="me" className="icon__container" />
