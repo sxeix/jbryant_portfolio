@@ -1,0 +1,23 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.box-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+}
+
+.box-description {
+    font-size: 0.9em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+}

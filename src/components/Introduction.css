@@ -11,7 +11,12 @@
     font-size: 2em;
 }
 
-.introduction__text {
-    text-align: left;
-    padding-right: 20px;
+.introduction__items {
+    gap: 1em;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
 }
